@@ -97,11 +97,11 @@ function makeCounter(){
 function counterFactory(value) {
   let counter = value;
     return {
-      inc(){
-      return counter++;
+    inc:function(){
+      return ++counter;
     },
-    dec(){
-      return counter--;
+    dec:function(){
+      return --counter;
     }
   }
 };
@@ -127,7 +127,7 @@ function motivation( firstname, lastname ) {
   var welcomeText = "You're doing awesome, keep it up";
 
   function message (){
-    return welcomeText + `${firstname} ${lastname}.`
+    return welcomeText + ' ' + `${firstname} ${lastname}.`
   }
 
   //Uncommment this to return the value of your message function
@@ -159,9 +159,9 @@ var module = (function() {
   // Anything that is being returned is made public and can be invoked from
   // outside our lexical scope
   return {
-    function publicMethod(){
+    // function publicMethod(){
 
-    }
+    // }
   };
 })();
 
