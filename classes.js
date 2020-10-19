@@ -143,7 +143,6 @@ fire(index){
 
   A Machine has the following methods:
     - makeWidgets
-        - This function takes in a number and increases widgets_made_count by that amount
         - It also increases wear_and_tear_count by 1 for every 50
     - fixMachine
         - This function sets needs_reboot to true
@@ -152,6 +151,19 @@ fire(index){
         - The anonymous function should decrease wear_and_tear_count by 10, and set needs_reboot to false
 */
 
-//Code Here
+class:MAchine{
+  construtor(){
+    this.widgets made count = 0;
+    this wear and teat = =0;
+    this needs reboot = false
+  }
+}
+
+makewidgets(num){
+  this.widgetsmadecount += num
+  this war and tear count =0
+  for let i = 0 i< thisl.widgetw made count i+=50
+}
+
 
 

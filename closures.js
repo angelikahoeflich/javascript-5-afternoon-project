@@ -160,7 +160,7 @@ var module = (function() {
   // outside our lexical scope
   return {
     publicMethod: function(){
-      return privateMethod();
+      return privateMethod()
     } 
   }; 
 })();
@@ -184,7 +184,7 @@ function secretNumber() {
       return secret += value
     },
     takeAwayFromSecret: function(value){
-      return secret =- value
+      return secret -= value
     }
   };
 }
